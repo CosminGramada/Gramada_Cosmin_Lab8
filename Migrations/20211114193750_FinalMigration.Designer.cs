@@ -4,14 +4,16 @@ using Gramada_Cosmin_Lab8.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Gramada_Cosmin_Lab8.Migrations
 {
     [DbContext(typeof(Gramada_Cosmin_Lab8Context))]
-    partial class Gramada_Cosmin_Lab8ContextModelSnapshot : ModelSnapshot
+    [Migration("20211114193750_FinalMigration")]
+    partial class FinalMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
